@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yfitops - Página Inicial</title>
+  <link rel="stylesheet" href="./styles/inicial.css">
+  <script src="./scripts/inicial.js" defer></script> <!-- Link para o JS -->
+</head>
+<body>
+  <header>
+    <h1>Yfitops - Música para Todos</h1>
+    <input type="text" class="search-bar" placeholder="Pesquise uma música...">
+  </header>
+
+  <a href="cadastro.html" class="add-music-btn">Cadastrar Nova Música</a>
+
+  <section class="songs" id="songList">
+    <!-- As músicas serão carregadas aqui -->
+  </section>
+
+  <div class="player">
+    <div class="current-song">
+      <p id="currentSongTitle">Nenhuma música tocando</p>
+      <p id="currentArtist">---</p>
+    </div>
+    <div class="controls">
+      <button onclick="prevSong()">⏮️</button>
+      <button onclick="togglePlay()">⏯️</button>
+      <button onclick="nextSong()">⏭️</button>
+    </div>
+  </div>
+
+  <audio id="audio" src=""></audio>
+
+</body>
+</html>
