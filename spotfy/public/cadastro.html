@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Música</title>
+    <link rel="stylesheet" href="./styles/cadastro.css">
+    <script src="./scripts/cadastro.js" defer></script> <!-- Link para o JS -->
+</head>
+<body>
+
+<div class="container">
+    <h1>Cadastrar Música</h1>
+    
+    <form id="musicForm">
+        <label for="nome">Nome da Música</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite o nome da música" required>
+
+        <label for="artista">Nome do Artista</label>
+        <input type="text" id="artista" name="artista" placeholder="Digite o nome do artista" required>
+
+        <label for="arquivo">Arquivo de Música</label>
+        <input type="file" id="arquivo" name="arquivo" accept="audio/*" required>
+
+        <label for="imagem">Imagem da Música</label>
+        <input type="file" id="imagem" name="imagem" accept="image/*" required>
+
+        <button type="submit">Cadastrar Música</button>
+    </form>
+
+    <!-- Botão de voltar -->
+    <button class="back-button">
+        <a href="./inicial.html" class="back-link">Voltar</a>
+    </button>
+</div>
+
+</body>
+</html>
